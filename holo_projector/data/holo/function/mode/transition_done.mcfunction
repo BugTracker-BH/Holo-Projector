@@ -6,4 +6,6 @@ execute if score #PENDING_MODE holo.state matches 3 run function holo:clock/star
 execute if score #PENDING_MODE holo.state matches 5 run function holo:text/display_actual
 execute if score #PENDING_MODE holo.state matches 6 run function holo:rainbow/start_actual
 execute if score #PENDING_MODE holo.state matches 7 run function holo:snake/start_actual
+execute if score #PENDING_MODE holo.state matches 8 run function holo:vm/start_actual
+execute if score #PENDING_MODE holo.state matches 9 run function holo:xray/start_actual
 scoreboard players set #PENDING_MODE holo.state 0

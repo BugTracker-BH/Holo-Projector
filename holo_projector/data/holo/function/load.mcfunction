@@ -48,6 +48,10 @@ scoreboard players set #SNAKE_SIZE_OVERRIDE holo.v 0
 
 scoreboard players set #RAINBOW_OFFSET holo.v 0
 
-function holo:text/init_font
+scoreboard players set #XRAY_Y_OFFSET holo.v 0
+scoreboard players set #XRAY_PHASE holo.v 0
 
-tellraw @a [{"text":"[Holo] Loaded. ","color":"aqua"},{"text":"[Get Projector] ","color":"green","underlined":true,"click_event":{"action":"run_command","command":"/function holo:control/give_item"}},{"text":"[Get Book]","color":"yellow","underlined":true,"click_event":{"action":"run_command","command":"/function holo:control/give_book"}}]
+function holo:text/init_font
+function holo:vm/load
+
+tellraw @a [{"text":"[Holo] Loaded. ","color":"aqua"},{"text":"[Get Projector] ","color":"green","underlined":true,"click_event":{"action":"run_command","command":"/function holo:control/give_item"}},{"text":"[Get Book] ","color":"yellow","underlined":true,"click_event":{"action":"run_command","command":"/function holo:control/give_book"}},{"text":"[Get Plus Book]","color":"light_purple","underlined":true,"click_event":{"action":"run_command","command":"/function holo:control/give_book_plus"}}]

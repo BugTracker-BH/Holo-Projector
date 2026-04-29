@@ -5,5 +5,7 @@ kill @e[tag=holo_anchor]
 kill @e[tag=holo_text_overlay]
 kill @e[tag=holo_welcome_intro]
 kill @e[tag=holo_welcome_prompt]
+kill @e[tag=xray_probe]
+scoreboard players set #VM_HALTED holo.state 1
 scoreboard players set #ACTIVE holo.state 0
 tellraw @s {"text":"[Holo] Screen despawned.","color":"gray"}
