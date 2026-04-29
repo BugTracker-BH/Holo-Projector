@@ -1,7 +1,10 @@
-# holo:scene/sphere — apply static sphere
+# holo:scene/sphere — static sphere
 execute unless entity @e[tag=projector_pixel,limit=1] run tellraw @s {"text":"[Holo] No screen. Run /function holo:projector/spawn first.","color":"red"}
 execute unless entity @e[tag=projector_pixel,limit=1] run return 0
+kill @e[tag=holo_text_overlay]
+kill @e[tag=holo_welcome_intro]
+kill @e[tag=holo_welcome_prompt]
 scoreboard players set #SCENE holo.state 1
-tellraw @s {"text":"[Holo] Rendering static sphere (may take ~1s)...","color":"aqua"}
+tellraw @s {"text":"[Holo] Rendering static sphere...","color":"aqua"}
 function holo:render/sphere_static
 tellraw @s {"text":"[Holo] Sphere rendered.","color":"green"}

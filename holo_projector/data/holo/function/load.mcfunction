@@ -12,6 +12,8 @@ scoreboard players set #COLS holo.v 32
 scoreboard players set #ROWS holo.v 18
 scoreboard players set #COLS_M1 holo.v 31
 scoreboard players set #ROWS_M1 holo.v 17
+scoreboard players set #PXSIZE_X100 holo.v 20
+scoreboard players set #INTERLACE holo.v 2
 scoreboard players set #MAX_PIX holo.v 576
 scoreboard players set #TWO holo.v 2
 scoreboard players set #NEG2 holo.v -2

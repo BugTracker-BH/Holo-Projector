@@ -2,9 +2,9 @@
 scoreboard players operation #PR holo.tmp = @s holo.row
 scoreboard players operation #PC holo.tmp = @s holo.col
 
-# Interlace: render only if (row % 2) == PARITY
+# Interlace: render only if (row % INTERLACE) == PARITY
 scoreboard players operation #PAR holo.tmp = #PR holo.tmp
-scoreboard players operation #PAR holo.tmp %= #TWO holo.v
+scoreboard players operation #PAR holo.tmp %= #INTERLACE holo.v
 execute unless score #PAR holo.tmp = #PARITY holo.state run return 0
 
 # u_fp = (2c - 31) * 1000 / 32
