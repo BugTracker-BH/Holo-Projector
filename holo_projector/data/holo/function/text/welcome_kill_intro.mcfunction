@@ -1,2 +1,1 @@
-# holo:text/welcome_kill_intro
-kill @e[tag=holo_welcome_intro]
+# holo:text/welcome_kill_intro — DEPRECATED (old text_display system)

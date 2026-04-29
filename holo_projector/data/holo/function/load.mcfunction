@@ -35,4 +35,5 @@ scoreboard players set #FRAME holo.frame 0
 scoreboard players set #MODE holo.state 0
 scoreboard players set #CAM_MODE holo.state 0
 function holo:math/init_sin
+function holo:text/init_font
 tellraw @a [{"text":"[Holo] Loaded (Phases 1-3). ","color":"aqua"},{"text":"[Get Projector] ","color":"green","underlined":true,"click_event":{"action":"run_command","command":"/function holo:control/give_item"}},{"text":"[Get Book]","color":"yellow","underlined":true,"click_event":{"action":"run_command","command":"/function holo:control/give_book"}}]
