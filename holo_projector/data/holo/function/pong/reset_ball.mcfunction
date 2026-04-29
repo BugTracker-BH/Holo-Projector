@@ -1,3 +1,4 @@
+# holo:pong/reset_ball — re-center ball with random velocity
 scoreboard players operation #PB_X holo.tmp = #COLS holo.v
 scoreboard players operation #PB_X holo.tmp /= #TWO holo.v
 scoreboard players operation #PB_Y holo.tmp = #ROWS holo.v

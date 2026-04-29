@@ -1,3 +1,1 @@
-$data modify storage holo:m msg set value "$(n)"
-scoreboard players set #SILENT_ERROR holo.tmp 1
-function holo:text/render_from_storage
+# DEPRECATED: render_num_macro is no longer used (replaced by fmt_s/fmt_ms/fmt_hms)

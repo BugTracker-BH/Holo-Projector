@@ -32,6 +32,7 @@ scoreboard players set #ACTIVE holo.state 0
 scoreboard players set #SCENE holo.state 0
 scoreboard players set #LIVE_MODE holo.state 0
 scoreboard players set #CLOCK_12H holo.state 0
+scoreboard players set #DIFFICULTY holo.v 2
 
 function holo:text/init_font
 

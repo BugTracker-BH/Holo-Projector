@@ -1,5 +1,7 @@
-# holo:pong/erase_ball — black out ball at prev position
-execute store result storage holo:m px int 1 run scoreboard players get #PB_PX holo.tmp
-execute store result storage holo:m py int 1 run scoreboard players get #PB_PY holo.tmp
-data modify storage holo:m color set value -16777216
-function holo:text/set_pixel with storage holo:m
+# holo:pong/erase_ball — erase ball at previous position
+scoreboard players operation #RX holo.tmp = #PB_PX holo.tmp
+scoreboard players operation #RY holo.tmp = #PB_PY holo.tmp
+scoreboard players operation #RW holo.tmp = #BALL_SIZE holo.v
+scoreboard players operation #RH holo.tmp = #BALL_SIZE holo.v
+scoreboard players set #RCOLOR holo.tmp -16777216
+function holo:pong/fill_rect
