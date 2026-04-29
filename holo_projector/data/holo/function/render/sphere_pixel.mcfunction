@@ -9,18 +9,16 @@ scoreboard players operation #PC holo.tmp = @s holo.col
 # u_fp = (2c - 31) * 1000 / 32  (range ~-968..968)
 scoreboard players operation #U holo.tmp = #PC holo.tmp
 scoreboard players operation #U holo.tmp *= #TWO holo.v
-scoreboard players operation #U holo.tmp -= #THIRTYONE holo.v
+scoreboard players operation #U holo.tmp -= #COLS_M1 holo.v
 scoreboard players operation #U holo.tmp *= #SCALE holo.v
-scoreboard players set #D32 holo.v 32
-scoreboard players operation #U holo.tmp /= #D32 holo.v
+scoreboard players operation #U holo.tmp /= #COLS holo.v
 
 # v_fp = (17 - 2r) * 1000 / 18
 scoreboard players operation #V holo.tmp = #PR holo.tmp
 scoreboard players operation #V holo.tmp *= #NEG2 holo.v
-scoreboard players operation #V holo.tmp += #SEVENTEEN holo.v
+scoreboard players operation #V holo.tmp += #ROWS_M1 holo.v
 scoreboard players operation #V holo.tmp *= #SCALE holo.v
-scoreboard players set #D18 holo.v 18
-scoreboard players operation #V holo.tmp /= #D18 holo.v
+scoreboard players operation #V holo.tmp /= #ROWS holo.v
 
 # raw dir (dx,dy,dz) = (U, V, 1500)   (focal length ~1.5 for narrow FOV)
 scoreboard players operation #DX holo.tmp = #U holo.tmp

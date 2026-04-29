@@ -1,0 +1,11 @@
+# holo:control/size_sm — 48x27 (1,296 pixels, ~9.6x5.4 blocks)
+scoreboard players set #COLS holo.v 48
+scoreboard players set #ROWS holo.v 27
+scoreboard players set #COLS_M1 holo.v 47
+scoreboard players set #ROWS_M1 holo.v 26
+scoreboard players set #MAX_PIX holo.v 1296
+tellraw @s {"text":"[Holo] Size: Small (48x27, 1296 px)","color":"aqua"}
+scoreboard players set #WAS_A holo.tmp 0
+execute if score #ACTIVE holo.state matches 1 run scoreboard players set #WAS_A holo.tmp 1
+execute if score #WAS_A holo.tmp matches 1 run function holo:projector/despawn
+execute if score #WAS_A holo.tmp matches 1 run function holo:projector/spawn

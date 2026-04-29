@@ -10,18 +10,16 @@ execute unless score #PAR holo.tmp = #PARITY holo.state run return 0
 # u_fp = (2c - 31) * 1000 / 32
 scoreboard players operation #U holo.tmp = #PC holo.tmp
 scoreboard players operation #U holo.tmp *= #TWO holo.v
-scoreboard players operation #U holo.tmp -= #THIRTYONE holo.v
+scoreboard players operation #U holo.tmp -= #COLS_M1 holo.v
 scoreboard players operation #U holo.tmp *= #SCALE holo.v
-scoreboard players set #D32 holo.v 32
-scoreboard players operation #U holo.tmp /= #D32 holo.v
+scoreboard players operation #U holo.tmp /= #COLS holo.v
 
 # v_fp = (17 - 2r) * 1000 / 18
 scoreboard players operation #V holo.tmp = #PR holo.tmp
 scoreboard players operation #V holo.tmp *= #NEG2 holo.v
-scoreboard players operation #V holo.tmp += #SEVENTEEN holo.v
+scoreboard players operation #V holo.tmp += #ROWS_M1 holo.v
 scoreboard players operation #V holo.tmp *= #SCALE holo.v
-scoreboard players set #D18 holo.v 18
-scoreboard players operation #V holo.tmp /= #D18 holo.v
+scoreboard players operation #V holo.tmp /= #ROWS holo.v
 
 # cam-space dir = (u, v, 1500)
 scoreboard players operation #DX holo.tmp = #U holo.tmp
