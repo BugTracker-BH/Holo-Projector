@@ -17,6 +17,7 @@ execute as @e[tag=projector_pixel] run data modify entity @s background set valu
 
 scoreboard players set #ACTIVE holo.state 1
 scoreboard players set #SCENE holo.state 0
+scoreboard players set #LIVE_MODE holo.state 0
 scoreboard players set #PARITY holo.state 0
 
 function holo:text/welcome
