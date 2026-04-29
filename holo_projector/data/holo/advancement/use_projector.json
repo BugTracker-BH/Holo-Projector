@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "use": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:recovery_compass",
+          "predicates": {
+            "minecraft:custom_data": "{holo_projector:1b}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "holo:control/on_use"
+  }
+}

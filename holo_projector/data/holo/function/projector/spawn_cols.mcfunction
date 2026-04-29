@@ -1,0 +1,11 @@
+# holo:projector/spawn_cols — recursive col loop (0..31)
+execute if score #C holo.col matches 32.. run return 0
+# col x offset: x = (2*c - 31) * 0.1  -> scale factor 0.1, int = (2c - 31)
+scoreboard players operation #CX holo.tmp = #C holo.col
+scoreboard players operation #CX holo.tmp *= #TWO holo.v
+scoreboard players operation #CX holo.tmp -= #THIRTYONE holo.v
+execute store result storage holo:m lx float 0.1 run scoreboard players get #CX holo.tmp
+execute store result storage holo:m c int 1 run scoreboard players get #C holo.col
+function holo:projector/spawn_pixel with storage holo:m
+scoreboard players add #C holo.col 1
+function holo:projector/spawn_cols
