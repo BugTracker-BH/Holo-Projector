@@ -22,7 +22,6 @@ scoreboard players set #SHL8 holo.v 256
 scoreboard players set #SHL16 holo.v 65536
 scoreboard players set #ALPHA_C0 holo.v -1073741824
 
-# Text style defaults
 scoreboard players set #TEXT_COLOR holo.v -16711681
 scoreboard players set #FORCED_SCALE holo.v 0
 scoreboard players set #CHAR_SPACING holo.v 1
@@ -32,7 +31,11 @@ scoreboard players set #ACTIVE holo.state 0
 scoreboard players set #SCENE holo.state 0
 scoreboard players set #LIVE_MODE holo.state 0
 scoreboard players set #CLOCK_12H holo.state 0
+scoreboard players set #JUKEBOX_ACTIVE holo.state 0
+scoreboard players set #VIZ_AUTOBEAT holo.state 0
 scoreboard players set #DIFFICULTY holo.v 2
+scoreboard players set #PONG_SIZE_OVERRIDE holo.v 0
+scoreboard players set #PONG_SENSITIVITY holo.v 20
 
 function holo:text/init_font
 
