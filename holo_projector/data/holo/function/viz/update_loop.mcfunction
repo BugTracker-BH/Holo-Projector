@@ -1,1 +1,1 @@
-# replaced by decay_loop in passive mode
+# Removed: visualizer feature was replaced.

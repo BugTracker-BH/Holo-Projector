@@ -30,12 +30,16 @@ scoreboard players set #CHAR_STRIDE holo.v 6
 scoreboard players set #ACTIVE holo.state 0
 scoreboard players set #SCENE holo.state 0
 scoreboard players set #LIVE_MODE holo.state 0
+scoreboard players set #PENDING_MODE holo.state 0
+scoreboard players set #TRANSITIONING holo.state 0
+scoreboard players set #RAINBOW holo.state 0
 scoreboard players set #CLOCK_12H holo.state 0
-scoreboard players set #JUKEBOX_ACTIVE holo.state 0
-scoreboard players set #VIZ_AUTOBEAT holo.state 0
+
 scoreboard players set #DIFFICULTY holo.v 2
 scoreboard players set #PONG_SIZE_OVERRIDE holo.v 0
 scoreboard players set #PONG_SENSITIVITY holo.v 20
+scoreboard players set #PONG_BALL_SPEED holo.v 1
+scoreboard players set #RAINBOW_OFFSET holo.v 0
 
 function holo:text/init_font
 
