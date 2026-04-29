@@ -1,5 +1,5 @@
 # holo:text/char_to_idx — map storage holo:m char to #CHAR_IDX
-scoreboard players set #CHAR_IDX holo.tmp 40
+scoreboard players set #CHAR_IDX holo.tmp 41
 execute if data storage holo:m {char:"A"} run scoreboard players set #CHAR_IDX holo.tmp 0
 execute if data storage holo:m {char:"B"} run scoreboard players set #CHAR_IDX holo.tmp 1
 execute if data storage holo:m {char:"C"} run scoreboard players set #CHAR_IDX holo.tmp 2
@@ -66,3 +66,4 @@ execute if data storage holo:m {char:"9"} run scoreboard players set #CHAR_IDX h
 execute if data storage holo:m {char:"!"} run scoreboard players set #CHAR_IDX holo.tmp 37
 execute if data storage holo:m {char:"?"} run scoreboard players set #CHAR_IDX holo.tmp 38
 execute if data storage holo:m {char:"."} run scoreboard players set #CHAR_IDX holo.tmp 39
+execute if data storage holo:m {char:"'"} run scoreboard players set #CHAR_IDX holo.tmp 40

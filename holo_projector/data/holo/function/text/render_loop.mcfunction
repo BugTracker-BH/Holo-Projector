@@ -10,8 +10,7 @@ execute store result storage holo:m gidx int 1 run scoreboard players get #CHAR_
 function holo:text/load_glyph with storage holo:m
 scoreboard players set #GR holo.tmp 0
 function holo:text/render_glyph
-scoreboard players set #SIXX holo.v 6
-scoreboard players operation #STRIDE holo.tmp = #SIXX holo.v
+scoreboard players operation #STRIDE holo.tmp = #CHAR_STRIDE holo.v
 scoreboard players operation #STRIDE holo.tmp *= #TSCALE holo.tmp
 scoreboard players operation #CHAR_X holo.tmp += #STRIDE holo.tmp
 scoreboard players add #I holo.tmp 1

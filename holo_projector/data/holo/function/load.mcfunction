@@ -22,6 +22,12 @@ scoreboard players set #SHL8 holo.v 256
 scoreboard players set #SHL16 holo.v 65536
 scoreboard players set #ALPHA_C0 holo.v -1073741824
 
+# Text style defaults
+scoreboard players set #TEXT_COLOR holo.v -16711681
+scoreboard players set #FORCED_SCALE holo.v 0
+scoreboard players set #CHAR_SPACING holo.v 1
+scoreboard players set #CHAR_STRIDE holo.v 6
+
 scoreboard players set #ACTIVE holo.state 0
 scoreboard players set #SCENE holo.state 0
 

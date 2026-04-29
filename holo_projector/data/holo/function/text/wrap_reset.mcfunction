@@ -6,5 +6,4 @@ scoreboard players set #I holo.tmp 0
 scoreboard players set #WRAP_ERROR holo.tmp 0
 execute store result score #MSGLEN holo.tmp run data get storage holo:m msg
 scoreboard players operation #MAX_CHARS holo.tmp = #COLS holo.v
-scoreboard players set #SIXW holo.v 6
-scoreboard players operation #MAX_CHARS holo.tmp /= #SIXW holo.v
+scoreboard players operation #MAX_CHARS holo.tmp /= #CHAR_STRIDE holo.v
