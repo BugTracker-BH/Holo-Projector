@@ -35,10 +35,17 @@ scoreboard players set #TRANSITIONING holo.state 0
 scoreboard players set #RAINBOW holo.state 0
 scoreboard players set #CLOCK_12H holo.state 0
 
+scoreboard players set #INPUT_MODE holo.v 0
+
 scoreboard players set #DIFFICULTY holo.v 2
 scoreboard players set #PONG_SIZE_OVERRIDE holo.v 0
 scoreboard players set #PONG_SENSITIVITY holo.v 20
 scoreboard players set #PONG_BALL_SPEED holo.v 1
+
+scoreboard players set #SNAKE_DIFFICULTY holo.v 2
+scoreboard players set #SNAKE_SPEED holo.v 2
+scoreboard players set #SNAKE_SIZE_OVERRIDE holo.v 0
+
 scoreboard players set #RAINBOW_OFFSET holo.v 0
 
 function holo:text/init_font
